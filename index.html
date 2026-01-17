@@ -1,145 +1,149 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MovieTime</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieTime</title>
 
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="header_group">
-          <div class="header_title"><a href="index.html">MovieTime</a></div>
-          <div class="header_button">
-            <a href="https://t.me/Michael7_P" target="_blank" class="button">Developer</a>
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MovieTime" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="header_group">
+        <div class="header_title"><a href="index.html">MovieTime</a></div>
+        <div class="header_button">
+          <a href="https://t.me/Michael7_P" target="_blank" class="button">Developer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="general">
+    <div class="container">
+      <div class="general_group animation_top">
+        <div class="general_info">
+          <div class="general_info_texter">
+            <div class="general_info_pretitle">Welcome to MovieTime</div>
+            <div class="general_info_title">The world of cinema</div>
+          </div>
+          <div class="general_info_search">
+            <div class="general_info_block">
+              <div class="general_info_block_icon">
+                <img src="images/icons/search.svg" />
+              </div>
+
+              <div class="general_info_block_input">
+                <input type="text" name="movie" id="movie" class="input"
+                  placeholder="Enter movie name, e.g., Harry Potter" />
+              </div>
+            </div>
+
+            <div class="general_info_button">
+              <button class="button" id="search_button">Search</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="general">
-      <div class="container">
-        <div class="general_group animation_top">
-          <div class="general_info">
-            <div class="general_info_texter">
-              <div class="general_info_pretitle">Welcome to MovieTime</div>
-              <div class="general_info_title">The world of cinema</div>
-            </div>
-            <div class="general_info_search">
-              <div class="general_info_block">
-                <div class="general_info_block_icon">
-                  <img src="images/icons/search.svg" />
-                </div>
+  </div>
+  <div class="main hidden">
+    <div class="container">
+      <div class="main_group">
+        <div class="main_group_title">Your result</div>
 
-                <div class="general_info_block_input">
-                  <input
-                    type="text"
-                    name="movie"
-                    id="movie"
-                    class="input"
-                    placeholder="Enter movie name, e.g., Harry Potter"
-                  />
-                </div>
-              </div>
-
-              <div class="general_info_button">
-                <button class="button" id="search_button">Search</button>
-              </div>
+        <div class="main_group_film">
+          <div class="main_group_film_poster">
+            <div class="main_group_poster_img">
+              <img src="" id="poster" />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="main hidden">
-      <div class="container">
-        <div class="main_group">
-          <div class="main_group_title">Your result</div>
 
-          <div class="main_group_film">
-            <div class="main_group_film_poster">
-              <div class="main_group_poster_img">
-                <img src="" id="poster" />
-              </div>
-            </div>
-
-            <div class="main_group_film_info">
-              <div class="main_group_film_info_texter">
-                <div class="main_group_film_info_block">
-                  <div class="main_group_film_info_title" id="title"></div>
-                  <div class="main_group_film_rating">
-                    <div class="main_group_film_rating_icon">
-                      <img src="images/icons/star.svg" />
-                    </div>
-                    <div class="main_group_film_rating_average" id="rating">6.5</div>
+          <div class="main_group_film_info">
+            <div class="main_group_film_info_texter">
+              <div class="main_group_film_info_block">
+                <div class="main_group_film_info_title" id="title"></div>
+                <div class="main_group_film_rating">
+                  <div class="main_group_film_rating_icon">
+                    <img src="images/icons/star.svg" />
                   </div>
+                  <div class="main_group_film_rating_average" id="rating">6.5</div>
                 </div>
-
-                <div class="main_group_film_descr" id="description"></div>
               </div>
 
-              <div class="main_group_film_info_pretitle">About the film</div>
+              <div class="main_group_film_descr" id="description"></div>
+            </div>
 
-              <div class="main_group_film_info_list">
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Realesed</div>
-                  <div class="main_group_film_info_detail_text" id="year"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Country</div>
-                  <div class="main_group_film_info_detail_text" id="country"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Genre</div>
-                  <div class="main_group_film_info_detail_text" id="genre"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Director</div>
-                  <div class="main_group_film_info_detail_text" id="director"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Language</div>
-                  <div class="main_group_film_info_detail_text" id="language"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Time</div>
-                  <div class="main_group_film_info_detail_text" id="runtime"></div>
-                </div>
+            <div class="main_group_film_info_pretitle">About the film</div>
+
+            <div class="main_group_film_info_list">
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Realesed</div>
+                <div class="main_group_film_info_detail_text" id="year"></div>
+              </div>
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Country</div>
+                <div class="main_group_film_info_detail_text" id="country"></div>
+              </div>
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Genre</div>
+                <div class="main_group_film_info_detail_text" id="genre"></div>
+              </div>
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Director</div>
+                <div class="main_group_film_info_detail_text" id="director"></div>
+              </div>
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Language</div>
+                <div class="main_group_film_info_detail_text" id="language"></div>
+              </div>
+              <div class="main_group_film_info_detail">
+                <div class="main_group_film_info_detail_default">Time</div>
+                <div class="main_group_film_info_detail_text" id="runtime"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="error_widget hidden">
-      <div class="container">
-        <div class="error_widget_group">
-          <div class="error_widget_title">Movie not found!</div>
-          <div class="error_widget_text">Please check the movie title and try again.</div>
-        </div>
+  <div class="error_widget hidden">
+    <div class="container">
+      <div class="error_widget_group">
+        <div class="error_widget_title">Movie not found!</div>
+        <div class="error_widget_text">Please check the movie title and try again.</div>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="footer_group">
-          <div class="footer_group_info">
-            <div class="footer_group_title"><a href="index.html">MovieTime</a></div>
-            <div class="footer_group_lable">Your movie time</div>
-          </div>
-
-          <div class="footer_group_copyright">© 2026 — MovieTime. All rights reserved.</div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer_group">
+        <div class="footer_group_info">
+          <div class="footer_group_title"><a href="index.html">MovieTime</a></div>
+          <div class="footer_group_lable">Your movie time</div>
         </div>
+
+        <div class="footer_group_copyright">© 2026 — MovieTime. All rights reserved.</div>
       </div>
     </div>
+  </div>
 
-    <script src="js/animations.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+  <script src="js/animations.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
 </html>
