@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
       <div class="container">
         <div class="header_group">
           <div class="header_title"><a href="index.html">MovieTime</a></div>
@@ -30,111 +30,113 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="general">
-      <div class="container">
-        <div class="general_group animation_top">
-          <div class="general_info">
-            <div class="general_info_texter">
-              <div class="general_info_pretitle">Welcome to MovieTime</div>
-              <div class="general_info_title">The world of cinema</div>
-            </div>
-            <div class="general_info_search">
-              <div class="general_info_block">
-                <div class="general_info_block_icon">
-                  <img src="images/icons/search.svg" />
-                </div>
-
-                <div class="general_info_block_input">
-                  <input
-                    type="text"
-                    name="movie"
-                    id="movie"
-                    class="input"
-                    placeholder="Enter movie name, e.g., Harry Potter"
-                  />
-                </div>
+    </header>
+    <main>
+      <section class="general">
+        <div class="container">
+          <div class="general_group animation_top">
+            <div class="general_info">
+              <div class="general_info_texter">
+                <div class="general_info_pretitle">Welcome to MovieTime</div>
+                <div class="general_info_title">The world of cinema</div>
               </div>
+              <div class="general_info_search">
+                <div class="general_info_block">
+                  <div class="general_info_block_icon">
+                    <img src="images/icons/search.svg" />
+                  </div>
 
-              <div class="general_info_button">
-                <button class="button" id="search_button">Search</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main hidden">
-      <div class="container">
-        <div class="main_group">
-          <div class="main_group_title">Your result</div>
-
-          <div class="main_group_film">
-            <div class="main_group_film_poster">
-              <div class="main_group_poster_img">
-                <img src="" id="poster" />
-              </div>
-            </div>
-
-            <div class="main_group_film_info">
-              <div class="main_group_film_info_texter">
-                <div class="main_group_film_info_block">
-                  <div class="main_group_film_info_title" id="title"></div>
-                  <div class="main_group_film_rating">
-                    <div class="main_group_film_rating_icon">
-                      <img src="images/icons/star.svg" />
-                    </div>
-                    <div class="main_group_film_rating_average" id="rating">6.5</div>
+                  <div class="general_info_block_input">
+                    <input
+                      type="text"
+                      name="movie"
+                      id="movie"
+                      class="input"
+                      placeholder="Enter movie name, e.g., Harry Potter"
+                    />
                   </div>
                 </div>
 
-                <div class="main_group_film_descr" id="description"></div>
-              </div>
-
-              <div class="main_group_film_info_pretitle">About the film</div>
-
-              <div class="main_group_film_info_list">
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Realesed</div>
-                  <div class="main_group_film_info_detail_text" id="year"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Country</div>
-                  <div class="main_group_film_info_detail_text" id="country"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Genre</div>
-                  <div class="main_group_film_info_detail_text" id="genre"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Director</div>
-                  <div class="main_group_film_info_detail_text" id="director"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Language</div>
-                  <div class="main_group_film_info_detail_text" id="language"></div>
-                </div>
-                <div class="main_group_film_info_detail">
-                  <div class="main_group_film_info_detail_default">Time</div>
-                  <div class="main_group_film_info_detail_text" id="runtime"></div>
+                <div class="general_info_button">
+                  <button class="button" id="search_button">Search</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section class="main hidden">
+        <div class="container">
+          <div class="main_group">
+            <div class="main_group_title">Your result</div>
 
-    <div class="error_widget hidden">
-      <div class="container">
-        <div class="error_widget_group">
-          <div class="error_widget_title">Movie not found!</div>
-          <div class="error_widget_text">Please check the movie title and try again.</div>
+            <div class="main_group_film">
+              <div class="main_group_film_poster">
+                <div class="main_group_poster_img">
+                  <img src="" id="poster" />
+                </div>
+              </div>
+
+              <div class="main_group_film_info">
+                <div class="main_group_film_info_texter">
+                  <div class="main_group_film_info_block">
+                    <div class="main_group_film_info_title" id="title"></div>
+                    <div class="main_group_film_rating">
+                      <div class="main_group_film_rating_icon">
+                        <img src="images/icons/star.svg" />
+                      </div>
+                      <div class="main_group_film_rating_average" id="rating">6.5</div>
+                    </div>
+                  </div>
+
+                  <div class="main_group_film_descr" id="description"></div>
+                </div>
+
+                <div class="main_group_film_info_pretitle">About the film</div>
+
+                <div class="main_group_film_info_list">
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Realesed</div>
+                    <div class="main_group_film_info_detail_text" id="year"></div>
+                  </div>
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Country</div>
+                    <div class="main_group_film_info_detail_text" id="country"></div>
+                  </div>
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Genre</div>
+                    <div class="main_group_film_info_detail_text" id="genre"></div>
+                  </div>
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Director</div>
+                    <div class="main_group_film_info_detail_text" id="director"></div>
+                  </div>
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Language</div>
+                    <div class="main_group_film_info_detail_text" id="language"></div>
+                  </div>
+                  <div class="main_group_film_info_detail">
+                    <div class="main_group_film_info_detail_default">Time</div>
+                    <div class="main_group_film_info_detail_text" id="runtime"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="footer">
+      <section class="error_widget hidden" aria-live="polite" aria-atomic="true">
+        <div class="container">
+          <div class="error_widget_group">
+            <div class="error_widget_title">Movie not found!</div>
+            <div class="error_widget_text">Please check the movie title and try again.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
         <div class="footer_group">
           <div class="footer_group_info">
@@ -145,7 +147,7 @@
           <div class="footer_group_copyright">© 2026 — MovieTime. All rights reserved.</div>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script>
       let date = new Date();
